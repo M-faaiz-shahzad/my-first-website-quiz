@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body
+        {
+            background-image: url(mathematics-symbols-and-formulas-background-vector-46698030.avif);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: left;
+            text-align: left;
+        }
+        div
+        {
+            background-color: rgb(103, 171, 219);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Quiz</h1>
+        <form id="quizForm">
+            <div class="question" id="q1" data-correct="b">
+                <p>1. What is 5 + 7?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> 10</label>
+                    <label><input type="radio" name="q1" value="b"> 12</label>
+                    <label><input type="radio" name="q1" value="c"> 14</label>
+                    <label><input type="radio" name="q1" value="d"> 15</label>
+                </div>
+            </div>
+
+            <div class="question" id="q2" data-correct="c">
+                <p>2. What is 10 x 10?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> 20</label>
+                    <label><input type="radio" name="q2" value="b"> 50</label>
+                    <label><input type="radio" name="q2" value="c"> 100</label>
+                    <label><input type="radio" name="q2" value="d"> 1000</label>
+                </div>
+            </div>
+
+            <div class="question" id="q3" data-correct="a">
+                <p>3. Square root of 81?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> 9</label>
+                    <label><input type="radio" name="q3" value="b"> 8</label>
+                    <label><input type="radio" name="q3" value="c"> 7</label>
+                </div>
+            </div>
+
+            <div class="question" id="q4" data-correct="b">
+                <p>4. 100 - 25 = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> 65</label>
+                    <label><input type="radio" name="q4" value="b"> 75</label>
+                    <label><input type="radio" name="q4" value="c"> 85</label>
+                </div>
+            </div>
+
+            <div class="question" id="q5" data-correct="a">
+                <p>5. What is an even number?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> 2</label>
+                    <label><input type="radio" name="q5" value="b"> 3</label>
+                    <label><input type="radio" name="q5" value="c"> 7</label>
+                </div>
+            </div>
+
+            <div class="question" id="q6" data-correct="b">
+                <p>6. Value of Pi?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> 3.12</label>
+                    <label><input type="radio" name="q6" value="b"> 3.14</label>
+                    <label><input type="radio" name="q6" value="c"> 3.16</label>
+                </div>
+            </div>
+
+            <div class="question" id="q7" data-correct="c">
+                <p>7. 90 / 3 = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> 20</label>
+                    <label><input type="radio" name="q7" value="b"> 25</label>
+                    <label><input type="radio" name="q7" value="c"> 30</label>
+                </div>
+            </div>
+
+            <div class="question" id="q8" data-correct="a">
+                <p>8. Sides in a triangle?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> 3</label>
+                    <label><input type="radio" name="q8" value="b"> 4</label>
+                    <label><input type="radio" name="q8" value="c"> 5</label>
+                </div>
+            </div>
+
+            <div class="question" id="q9" data-correct="b">
+                <p>9. 5 cubed is?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> 25</label>
+                    <label><input type="radio" name="q9" value="b"> 125</label>
+                    <label><input type="radio" name="q9" value="c"> 225</label>
+                </div>
+            </div>
+
+            <div class="question" id="q10" data-correct="c">
+                <p>10. 7 * 8 = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> 54</label>
+                    <label><input type="radio" name="q10" value="b"> 58</label>
+                    <label><input type="radio" name="q10" value="c"> 56</label>
+                </div>
+            </div>
+        </form>
+
+        <button class="btn" onclick="finishQuiz()">Submit</button>
+        <div id="result"></div>
+        <a href="index.html" class="btn home-btn">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

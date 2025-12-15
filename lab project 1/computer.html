@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body
+        {
+            background-image: url(hq720.jpg);
+            background-attachment: fixed;
+            background-size:cover;
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+        div{
+            background-color: rgb(1, 106, 186);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Quiz</h1>
+        <form id="quizForm">
+            <div class="question" id="q1" data-correct="b">
+                <p>1. The "Brain" of the computer is?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> RAM</label>
+                    <label><input type="radio" name="q1" value="b"> CPU</label>
+                    <label><input type="radio" name="q1" value="c"> Hard Drive</label>
+                    <label><input type="radio" name="q1" value="d"> Monitor</label>
+                </div>
+            </div>
+
+            <div class="question" id="q2" data-correct="a">
+                <p>2. What does RAM stand for?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> Random Access Memory</label>
+                    <label><input type="radio" name="q2" value="b"> Read Access Memory</label>
+                    <label><input type="radio" name="q2" value="c"> Run Accept Memory</label>
+                    <label><input type="radio" name="q2" value="d"> None</label>
+                </div>
+            </div>
+
+            <div class="question" id="q3" data-correct="c">
+                <p>3. 1 Kilobyte (KB) is equal to?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> 1000 Bytes</label>
+                    <label><input type="radio" name="q3" value="b"> 100 Bytes</label>
+                    <label><input type="radio" name="q3" value="c"> 1024 Bytes</label>
+                    <label><input type="radio" name="q3" value="d"> 8 Bytes</label>
+                </div>
+            </div>
+
+            <div class="question" id="q4" data-correct="d">
+                <p>4. Which of these is an Input Device?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> Speaker</label>
+                    <label><input type="radio" name="q4" value="b"> Monitor</label>
+                    <label><input type="radio" name="q4" value="c"> Printer</label>
+                    <label><input type="radio" name="q4" value="d"> Mouse</label>
+                </div>
+            </div>
+
+            <div class="question" id="q5" data-correct="b">
+                <p>5. HTML is used for creating?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> Databases</label>
+                    <label><input type="radio" name="q5" value="b"> Web Pages</label>
+                    <label><input type="radio" name="q5" value="c"> Operating Systems</label>
+                    <label><input type="radio" name="q5" value="d"> Spreadsheets</label>
+                </div>
+            </div>
+
+            <div class="question" id="q6" data-correct="a">
+                <p>6. Windows, macOS, and Linux are examples of?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> Operating Systems</label>
+                    <label><input type="radio" name="q6" value="b"> Web Browsers</label>
+                    <label><input type="radio" name="q6" value="c"> Hardware</label>
+                    <label><input type="radio" name="q6" value="d"> Anti-virus</label>
+                </div>
+            </div>
+
+            <div class="question" id="q7" data-correct="c">
+                <p>7. Who founded Microsoft?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> Steve Jobs</label>
+                    <label><input type="radio" name="q7" value="b"> Mark Zuckerberg</label>
+                    <label><input type="radio" name="q7" value="c"> Bill Gates</label>
+                    <label><input type="radio" name="q7" value="d"> Elon Musk</label>
+                </div>
+            </div>
+
+            <div class="question" id="q8" data-correct="b">
+                <p>8. 'Ctrl + V' is the shortcut for?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Copy</label>
+                    <label><input type="radio" name="q8" value="b"> Paste</label>
+                    <label><input type="radio" name="q8" value="c"> Cut</label>
+                    <label><input type="radio" name="q8" value="d"> Undo</label>
+                </div>
+            </div>
+
+            <div class="question" id="q9" data-correct="a">
+                <p>9. The language computers understand directly is?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> Binary</label>
+                    <label><input type="radio" name="q9" value="b"> English</label>
+                    <label><input type="radio" name="q9" value="c"> Java</label>
+                    <label><input type="radio" name="q9" value="d"> Python</label>
+                </div>
+            </div>
+
+            <div class="question" id="q10" data-correct="d">
+                <p>10. What does WWW stand for?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> World Web Wide</label>
+                    <label><input type="radio" name="q10" value="b"> Wide World Web</label>
+                    <label><input type="radio" name="q10" value="c"> Web World Wide</label>
+                    <label><input type="radio" name="q10" value="d"> World Wide Web</label>
+                </div>
+            </div>
+        </form>
+
+        <button class="btn" onclick="finishQuiz()">Submit Answers</button>
+        <div id="result"></div>
+        <a href="index.html" class="btn home-btn">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

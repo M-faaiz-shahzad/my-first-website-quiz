@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Quiz</title>
+    <link rel="stylesheet" href="style.css">
+        <style>
+         body
+        {
+            background-image: url(hq720\ \(1\).jpg);
+            background-attachment: fixed;
+            background-size:cover;
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+        div{
+            background-color: rgb(246, 113, 113) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Physics Quiz</h1>
+        <form id="quizForm">
+            <div class="question" id="q1" data-correct="b">
+                <p>1. What is the standard unit of Force?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> Joule</label>
+                    <label><input type="radio" name="q1" value="b"> Newton</label>
+                    <label><input type="radio" name="q1" value="c"> Watt</label>
+                    <label><input type="radio" name="q1" value="d"> Pascal</label>
+                </div>
+            </div>
+
+            <div class="question" id="q2" data-correct="c">
+                <p>2. Who formulated the laws of motion?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> Einstein</label>
+                    <label><input type="radio" name="q2" value="b"> Tesla</label>
+                    <label><input type="radio" name="q2" value="c"> Newton</label>
+                    <label><input type="radio" name="q2" value="d"> Edison</label>
+                </div>
+            </div>
+
+            <div class="question" id="q3" data-correct="a">
+                <p>3. What is the speed of light in a vacuum?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> 3x10^8 m/s</label>
+                    <label><input type="radio" name="q3" value="b"> 3x10^6 m/s</label>
+                    <label><input type="radio" name="q3" value="c"> 300 km/h</label>
+                    <label><input type="radio" name="q3" value="d"> Sound speed</label>
+                </div>
+            </div>
+
+            <div class="question" id="q4" data-correct="b">
+                <p>4. Which planet has the strongest gravity?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> Earth</label>
+                    <label><input type="radio" name="q4" value="b"> Jupiter</label>
+                    <label><input type="radio" name="q4" value="c"> Mars</label>
+                    <label><input type="radio" name="q4" value="d"> Venus</label>
+                </div>
+            </div>
+
+            <div class="question" id="q5" data-correct="a">
+                <p>5. What is the freezing point of water?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> 0°C</label>
+                    <label><input type="radio" name="q5" value="b"> 100°C</label>
+                    <label><input type="radio" name="q5" value="c"> -10°C</label>
+                    <label><input type="radio" name="q5" value="d"> 32°C</label>
+                </div>
+            </div>
+
+            <div class="question" id="q6" data-correct="b">
+                <p>6. Electrons carry which charge?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> Positive</label>
+                    <label><input type="radio" name="q6" value="b"> Negative</label>
+                    <label><input type="radio" name="q6" value="c"> Neutral</label>
+                    <label><input type="radio" name="q6" value="d"> None</label>
+                </div>
+            </div>
+
+            <div class="question" id="q7" data-correct="d">
+                <p>7. Which of these is a conductor?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> Rubber</label>
+                    <label><input type="radio" name="q7" value="b"> Wood</label>
+                    <label><input type="radio" name="q7" value="c"> Plastic</label>
+                    <label><input type="radio" name="q7" value="d"> Copper</label>
+                </div>
+            </div>
+
+            <div class="question" id="q8" data-correct="a">
+                <p>8. Kinetic energy is the energy of...?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Motion</label>
+                    <label><input type="radio" name="q8" value="b"> Rest</label>
+                    <label><input type="radio" name="q8" value="c"> Heat</label>
+                    <label><input type="radio" name="q8" value="d"> Position</label>
+                </div>
+            </div>
+
+            <div class="question" id="q9" data-correct="c">
+                <p>9. The value of gravity (g) on Earth is approx?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> 5.5 m/s²</label>
+                    <label><input type="radio" name="q9" value="b"> 12 m/s²</label>
+                    <label><input type="radio" name="q9" value="c"> 9.8 m/s²</label>
+                    <label><input type="radio" name="q9" value="d"> 8.9 m/s²</label>
+                </div>
+            </div>
+
+            <div class="question" id="q10" data-correct="b">
+                <p>10. Sound cannot travel through?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> Water</label>
+                    <label><input type="radio" name="q10" value="b"> Vacuum</label>
+                    <label><input type="radio" name="q10" value="c"> Air</label>
+                    <label><input type="radio" name="q10" value="d"> Steel</label>
+                </div>
+            </div>
+        </form>
+
+        <button class="btn" onclick="finishQuiz()">Submit Answers</button>
+        <div id="result"></div>
+        <a href="index.html" class="btn home-btn">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
